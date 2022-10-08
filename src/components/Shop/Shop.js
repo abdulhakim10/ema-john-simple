@@ -28,7 +28,7 @@ const Shop = () => {
     },[products])
 
     const handleAddToCart = (selectedProduct) => {
-        // console.log(product)
+        // console.log(selectedProduct)
         let newCart = [];
         const exist = cart.find(product => product.id === selectedProduct.id);
         if(!exist){
