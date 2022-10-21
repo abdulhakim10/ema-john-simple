@@ -5,11 +5,11 @@ import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
 const Orders = () => {
-    const {products, initialCart} = useLoaderData();
+    const {initialCart} = useLoaderData();
     const [cart, setCart] = useState(initialCart);
     // console.log(products)
 
-    // remove item hander
+    // remove item handler
     const handleRemoveItem = id => {
         const remainingItem = cart.filter(product => product.id !== id);
         setCart(remainingItem);

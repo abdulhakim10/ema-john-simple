@@ -15,4 +15,8 @@ UserContext provides AuthContext
 2. Create AuthContext 
 3. Set AuthContext.Provider
 4. Make sure to set the children
+5. Export AuthContext to be used inside useContext hook
+6. Get form data
+7. getAuth in the UserContext
+8. 
 */
