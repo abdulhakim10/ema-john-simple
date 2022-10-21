@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Cart.css'
-const Cart = ({cart}) => {
-    // console.log(cart)
+const Cart = (props) => {
+    const {cart, clearCart, children} = props;
+    console.log(children)
     let total = 0;
     let shipping = 0;
     let quantity = 0;
@@ -22,6 +24,8 @@ const Cart = ({cart}) => {
             <p>Total Shipping Charge: ${shipping}</p>
             <p>Tax: ${tax}</p>
             <h5>Grand Total: ${grandTotal}</h5>
+            <button onClick={clearCart}>Clear Cart</button>
+            {children}
         </div>
     );
 };
