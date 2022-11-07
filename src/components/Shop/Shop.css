@@ -9,6 +9,22 @@
     margin: 100px 50px;
 }
 
+.pagination{
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+
+.pagination button{
+    margin-right: 10px;
+}
+
+.pagination .selected{
+    background-color: goldenrod;
+    font-weight: bold;
+    width: 40px;
+    padding: 8px;
+}
+
 @media screen and (max-width:1100px) {
     .products-container{
         grid-template-columns: repeat(2, 1fr);
