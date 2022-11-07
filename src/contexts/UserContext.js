@@ -29,7 +29,7 @@ const UserContext = ({children}) => {
     // use observer for hold user info
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            console.log(currentUser)
+            // console.log(currentUser)
             setUser(currentUser);
             setLoading(false);
         })
